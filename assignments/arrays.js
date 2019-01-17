@@ -86,6 +86,7 @@ for (let i = 0; i < inventory.length; i++) {
     carModels.push(inventory[i].car_model.charAt(0).toUpperCase() + inventory[i].car_model.substr(1));
 }
 
+    //Sorting function
 function bubbleSort(arr){
     let len = arr.length;
     for (let i = len-1; i>=0; i--){
@@ -98,9 +99,9 @@ function bubbleSort(arr){
       }
     }
     return arr;
-}
-carModels = bubbleSort(carModels);
-console.log(carModels);
+} //<---- function ends
+
+console.log(bubbleSort(carModels));
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
